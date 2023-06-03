@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="heading">
+    <h1 >Welcome To Temperature Converter</h1>
+   </div>
+         <div class="box">
+        <form id="calcuTemp" onsubmit="convertTemp(); return false">
+        <label for="temp">Enter Your Temperature value to convert</label>
+        <br>
+        Value:<input type="number" name="temp" id="temp" value="0">
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">Celsius</option>
+            <option value="fah">Fahrenheit</option>
+        </select><br>
+        <br>
+        <button name="temp" type="submit" value="number" style="padding: 10px 25px;">convert</button>
+        <button name="clear" type="reset" value="number" style="padding: 10px 25px;">reset</button><br>
+        <br>
+        <span id="result">Result</span>
+        </form>
+    </div>
+ <footer>
+        <p style="color: black; font-size: 150% ; margin-top: 10px;">Concept Used</p><br>     
+        <p style="color: black; font-size: 120%;">1.Celsius to Fahrenheit using the °F = (°C x 1.8) + 32</p>
+        <p style="color: black; font-size: 120%;">2. Fahrenheit to Celsius with the °C = (°F - 32) x 5/</p>
+            <div class="img">
+                <img src="img/logo.png">
+    </div>
+ </footer>
+ <div class="contact" style="text-align: center;">
+    <p>for any error contact:sharmmohit29@gmail.com</p>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
